@@ -65,6 +65,12 @@
     padding: 20px;
     margin-top: 20px;
   }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
   
   /* Clear floats after the columns */
   .row:after {
@@ -90,6 +96,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 8px;
+}
+
+.div0 {
+    grid-row: span 3 / span 3;
 }
 
 .div1 {
@@ -134,7 +144,7 @@
     grid-row-start: 7;
 }
 
-.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover{
+.div0:hover, .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover{
     box-shadow: 0 15px 30px -5px rgba(235, 233, 233, 0.15), 0 0 5px rgba(0,0,0,.1);
 	transform: translateY(-10px);
 }
