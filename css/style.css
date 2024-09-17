@@ -95,8 +95,8 @@ GRID
     margin: 0 auto 3vw;
     display: grid;
     gap: 2vw;
-    grid-template-columns: repeat(2, 46vw); /* (94 - 2) / 2 */
-    grid-template-rows: repeat(8, 46vw);
+    grid-template-columns: repeat(4, calc((94vw - 6vw) / 4)); /* 4列に設定 */
+    grid-template-rows: repeat(auto-fill, 28vw); /* 高さは内容に合わせる */
 }
 .grid-item {
     width: 100%;
@@ -146,10 +146,12 @@ DESKTOP SIZE
     }
 /* Grid */
     .grid {
-        width: 80vw;
-        gap: 1vw;
-        grid-template-columns: repeat(3, 26vw); /* (80 - 2) / 3 */
-        grid-template-rows: repeat(5, 26vw);
+        width: 94vw;
+        margin: 0 auto 3vw;
+        display: grid;
+        gap: 2vw;
+        grid-template-columns: repeat(4, calc((94vw - 6vw) / 4)); /* 4列に設定 */
+        grid-template-rows: repeat(auto-fill, 28vw); /* 高さは内容に合わせる */
     }
     .grid-big-bottom {
         grid-column: 2/4;
